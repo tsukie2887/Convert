@@ -1,0 +1,624 @@
+2019-01-30 15:53:22.444  INFO   --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.pershing.convert.ConvertApplicationTests], using SpringBootContextLoader
+2019-01-30 15:53:22.455  INFO   --- [Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.pershing.convert.ConvertApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-01-30 15:53:22.456  INFO   --- [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.pershing.convert.ConvertApplicationTests]: ConvertApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-01-30 15:53:22.607  INFO   --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.pershing.convert.ConvertApp for test class com.pershing.convert.ConvertApplicationTests
+2019-01-30 15:53:22.739  INFO   --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-01-30 15:53:22.766  INFO   --- [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@541c837f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@53097d6a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@643960e7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7d2aae9a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d1ddd3b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@55671bdf, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a7667cc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@52005866, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7157b318, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1c03e70e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5502bb45, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5110aeb]
+2019-01-30 15:53:23.102 === [Test worker] === WARN  === o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer ==== 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Wayne_C/.gradle/caches/modules-2/files-2.1/org.json/json/20141113/c590c04911645db2f53b9bbefd5c3fcd8ca5581d/json-20141113.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Wayne_C/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-01-30 15:53:23.121 === [Test worker] === INFO  === com.pershing.convert.ConvertApplicationTests ==== Starting ConvertApplicationTests on Wayne-C-T580 with PID 175268 (started by Wayne_C in R:\0130\convert)
+2019-01-30 15:53:23.122 === [Test worker] === INFO  === com.pershing.convert.ConvertApplicationTests ==== No active profile set, falling back to default profiles: default
+2019-01-30 15:53:23.982 === [Test worker] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-30 15:53:24.107 === [Test worker] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Finished Spring Data repository scanning in 111ms. Found 2 repository interfaces.
+2019-01-30 15:53:25.088 === [Test worker] === INFO  === o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ==== Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd61db67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 15:53:25.512 === [Test worker] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2019-01-30 15:53:25.731 === [Test worker] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2019-01-30 15:53:25.825 === [Test worker] === INFO  === org.hibernate.jpa.internal.util.LogHelper ==== HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-30 15:53:25.919 === [Test worker] === INFO  === org.hibernate.Version ==== HHH000412: Hibernate Core {5.2.12.Final}
+2019-01-30 15:53:25.921 === [Test worker] === INFO  === org.hibernate.cfg.Environment ==== HHH000206: hibernate.properties not found
+2019-01-30 15:53:25.973 === [Test worker] === INFO  === org.hibernate.annotations.common.Version ==== HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-30 15:53:26.133 === [Test worker] === INFO  === org.hibernate.dialect.Dialect ==== HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-30 15:53:26.557 === [Test worker] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 15:53:26.826 === [Test worker] === WARN  === o.s.w.context.support.GenericWebApplicationContext ==== Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+2019-01-30 15:53:26.827 === [Test worker] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 15:53:26.828 === [Test worker] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2019-01-30 15:53:26.835 === [Test worker] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2019-01-30 15:53:26.846 === [Test worker] === INFO  === o.s.b.a.l.ConditionEvaluationReportLoggingListener ==== 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-30 15:53:26.854 === [Test worker] === ERROR === org.springframework.boot.SpringApplication ==== Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 67 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 80 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 93 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:472)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:72)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:150)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:102)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:85)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 103 common frames omitted
+2019-01-30 15:53:26.863 === [Test worker] === ERROR === o.springframework.test.context.TestContextManager ==== Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@541c837f] to prepare test instance [com.pershing.convert.ConvertApplicationTests@6167280f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 67 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 80 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 93 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.pershing.convert.entities.ConvertData
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:472)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:72)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:150)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:102)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:85)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 103 common frames omitted
+2019-01-30 16:04:13.562 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Starting ConvertApp on Wayne-C-T580 with PID 191384 (R:\0130\convert\build\classes\java\main started by Wayne_C in R:\0130\convert)
+2019-01-30 16:04:13.566 === [main] === INFO  === com.pershing.convert.ConvertApp ==== No active profile set, falling back to default profiles: default
+2019-01-30 16:04:14.444 === [main] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-30 16:04:14.520 === [main] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Finished Spring Data repository scanning in 68ms. Found 2 repository interfaces.
+2019-01-30 16:04:15.275 === [main] === INFO  === o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ==== Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b17dc540] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:04:16.335 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8081 (http)
+2019-01-30 16:04:16.378 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2019-01-30 16:04:16.378 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-30 16:04:16.395 === [main] === INFO  === org.apache.catalina.core.AprLifecycleListener ==== The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8.0.191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-1.8.0.191\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\apache-tomcat-8.0.35;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Gradle\gradle-4.10;D:\jar;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Wayne_C\AppData\Local\Microsoft\WindowsApps;C:\Users\Wayne_C\AppData\Roaming\npm;C:\Users\Wayne_C\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg-4.0.2-win64-static\bin;R:\ffmpeg\bin;C:\apache-tomcat-8.0.35;;.]
+2019-01-30 16:04:16.556 === [main] === INFO  === o.a.c.c.C.[Tomcat].[localhost].[/video] ==== Initializing Spring embedded WebApplicationContext
+2019-01-30 16:04:16.556 === [main] === INFO  === org.springframework.web.context.ContextLoader ==== Root WebApplicationContext: initialization completed in 2897 ms
+2019-01-30 16:04:16.796 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2019-01-30 16:04:17.061 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2019-01-30 16:04:17.142 === [main] === INFO  === org.hibernate.jpa.internal.util.LogHelper ==== HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-30 16:04:17.271 === [main] === INFO  === org.hibernate.Version ==== HHH000412: Hibernate Core {5.2.12.Final}
+2019-01-30 16:04:17.273 === [main] === INFO  === org.hibernate.cfg.Environment ==== HHH000206: hibernate.properties not found
+2019-01-30 16:04:17.333 === [main] === INFO  === org.hibernate.annotations.common.Version ==== HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-30 16:04:17.504 === [main] === INFO  === org.hibernate.dialect.Dialect ==== HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-30 16:04:18.272 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:04:18.626 === [main] === WARN  === o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext ==== Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+2019-01-30 16:04:18.627 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:04:18.627 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2019-01-30 16:04:18.643 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2019-01-30 16:04:18.647 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Stopping service [Tomcat]
+2019-01-30 16:04:18.665 === [main] === INFO  === o.s.b.a.l.ConditionEvaluationReportLoggingListener ==== 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-30 16:04:18.670 === [main] === ERROR === org.springframework.boot.SpringApplication ==== Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.pershing.convert.ConvertApp.main(ConvertApp.java:32)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:545)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 55 common frames omitted
+2019-01-30 16:10:28.894 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Starting ConvertApp on Wayne-C-T580 with PID 153676 (R:\0130\convert\build\classes\java\main started by Wayne_C in R:\0130\convert)
+2019-01-30 16:10:28.897 === [main] === INFO  === com.pershing.convert.ConvertApp ==== No active profile set, falling back to default profiles: default
+2019-01-30 16:10:29.819 === [main] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-30 16:10:29.889 === [main] === INFO  === o.s.d.r.config.RepositoryConfigurationDelegate ==== Finished Spring Data repository scanning in 62ms. Found 2 repository interfaces.
+2019-01-30 16:10:30.614 === [main] === INFO  === o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ==== Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6be85344] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:10:31.731 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8081 (http)
+2019-01-30 16:10:31.836 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2019-01-30 16:10:31.836 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-01-30 16:10:31.850 === [main] === INFO  === org.apache.catalina.core.AprLifecycleListener ==== The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8.0.191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-1.8.0.191\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\apache-tomcat-8.0.35;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Gradle\gradle-4.10;D:\jar;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Wayne_C\AppData\Local\Microsoft\WindowsApps;C:\Users\Wayne_C\AppData\Roaming\npm;C:\Users\Wayne_C\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg-4.0.2-win64-static\bin;R:\ffmpeg\bin;C:\apache-tomcat-8.0.35;;.]
+2019-01-30 16:10:32.036 === [main] === INFO  === o.a.c.c.C.[Tomcat].[localhost].[/video] ==== Initializing Spring embedded WebApplicationContext
+2019-01-30 16:10:32.036 === [main] === INFO  === org.springframework.web.context.ContextLoader ==== Root WebApplicationContext: initialization completed in 3044 ms
+2019-01-30 16:10:32.260 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2019-01-30 16:10:32.500 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2019-01-30 16:10:32.581 === [main] === INFO  === org.hibernate.jpa.internal.util.LogHelper ==== HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-30 16:10:32.725 === [main] === INFO  === org.hibernate.Version ==== HHH000412: Hibernate Core {5.2.12.Final}
+2019-01-30 16:10:32.729 === [main] === INFO  === org.hibernate.cfg.Environment ==== HHH000206: hibernate.properties not found
+2019-01-30 16:10:32.786 === [main] === INFO  === org.hibernate.annotations.common.Version ==== HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-30 16:10:32.982 === [main] === INFO  === org.hibernate.dialect.Dialect ==== HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-30 16:10:33.728 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:10:34.087 === [main] === WARN  === o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext ==== Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+2019-01-30 16:10:34.088 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:10:34.089 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown initiated...
+2019-01-30 16:10:34.094 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Shutdown completed.
+2019-01-30 16:10:34.097 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Stopping service [Tomcat]
+2019-01-30 16:10:34.116 === [main] === INFO  === o.s.b.a.l.ConditionEvaluationReportLoggingListener ==== 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-30 16:10:34.122 === [main] === ERROR === org.springframework.boot.SpringApplication ==== Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'convertApp': Unsatisfied dependency expressed through field 'scheduleService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.pershing.convert.ConvertApp.main(ConvertApp.java:32)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'scheduleServiceImpl': Unsatisfied dependency expressed through field 'dbService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DBServiceImpl': Unsatisfied dependency expressed through field 'convertDBR'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 32 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'convertDataRepository': Invocation of init method failed; nested exception is java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1244)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 45 common frames omitted
+Caused by: java.lang.IllegalStateException: You have defined query method in the repository but you don't have any query lookup strategy defined. The infrastructure apparently does not support query methods!
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:545)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:324)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741)
+	... 55 common frames omitted
+2019-01-30 16:16:45.202 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Starting ConvertApp on Wayne-C-T580 with PID 239784 (R:\0130\convert\build\classes\java\main started by Wayne_C in R:\0130\convert)
+2019-01-30 16:16:45.206 === [main] === INFO  === com.pershing.convert.ConvertApp ==== No active profile set, falling back to default profiles: default
+2019-01-30 16:16:45.297 === [main] === INFO  === o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext ==== Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Wed Jan 30 16:16:45 CST 2019]; root of context hierarchy
+2019-01-30 16:16:46.998 === [main] === INFO  === o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ==== Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45a6176d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:16:48.149 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8081 (http)
+2019-01-30 16:16:48.256 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2019-01-30 16:16:48.257 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-30 16:16:48.272 === [localhost-startStop-1] === INFO  === org.apache.catalina.core.AprLifecycleListener ==== The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8.0.191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-1.8.0.191\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\apache-tomcat-8.0.35;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Gradle\gradle-4.10;D:\jar;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Wayne_C\AppData\Local\Microsoft\WindowsApps;C:\Users\Wayne_C\AppData\Roaming\npm;C:\Users\Wayne_C\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg-4.0.2-win64-static\bin;R:\ffmpeg\bin;C:\apache-tomcat-8.0.35;;.]
+2019-01-30 16:16:48.429 === [localhost-startStop-1] === INFO  === o.a.c.c.C.[Tomcat].[localhost].[/video] ==== Initializing Spring embedded WebApplicationContext
+2019-01-30 16:16:48.429 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader ==== Root WebApplicationContext: initialization completed in 3133 ms
+2019-01-30 16:16:48.546 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean ==== Servlet dispatcherServlet mapped to [/]
+2019-01-30 16:16:48.548 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean ==== Servlet webServlet mapped to [/h2-console/*]
+2019-01-30 16:16:48.554 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-30 16:16:48.554 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-30 16:16:48.555 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-30 16:16:48.555 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-30 16:16:48.767 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2019-01-30 16:16:49.000 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2019-01-30 16:16:49.063 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:16:49.097 === [main] === INFO  === org.hibernate.jpa.internal.util.LogHelper ==== HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-30 16:16:49.212 === [main] === INFO  === org.hibernate.Version ==== HHH000412: Hibernate Core {5.2.12.Final}
+2019-01-30 16:16:49.214 === [main] === INFO  === org.hibernate.cfg.Environment ==== HHH000206: hibernate.properties not found
+2019-01-30 16:16:49.268 === [main] === INFO  === org.hibernate.annotations.common.Version ==== HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-30 16:16:49.430 === [main] === INFO  === org.hibernate.dialect.Dialect ==== HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-30 16:16:50.168 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:16:50.898 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:16:51.253 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter ==== Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5e82df6a: startup date [Wed Jan 30 16:16:45 CST 2019]; root of context hierarchy
+2019-01-30 16:16:51.321 === [main] === WARN  === o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration ==== spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-30 16:16:51.373 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/Api/InsertQueue],methods=[PUT]}" onto public java.lang.String com.pershing.convert.service.WebService.putConvertQueue(com.pershing.convert.entities.ConvertData) throws java.lang.Exception
+2019-01-30 16:16:51.377 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-30 16:16:51.378 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-30 16:16:51.422 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:16:51.423 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:16:51.526 === [main] === WARN  === o.s.b.a.mustache.MustacheAutoConfiguration ==== Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2019-01-30 16:16:51.922 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Registering beans for JMX exposure on startup
+2019-01-30 16:16:51.924 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-30 16:16:51.931 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-30 16:16:51.945 === [main] === INFO  === o.s.s.a.ScheduledAnnotationBeanPostProcessor ==== No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-01-30 16:16:51.999 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8081 (http) with context path '/video'
+2019-01-30 16:16:52.004 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Started ConvertApp in 7.277 seconds (JVM running for 8.079)
+2019-01-30 16:16:52.007 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Scheduler start...
+2019-01-30 16:16:52.007 === [main] === INFO  === com.pershing.convert.service.impl.DBServiceImpl ==== Previous Schedules recover...
+2019-01-30 16:16:52.058 === [main] === INFO  === o.h.hql.internal.QueryTranslatorFactoryInitiator ==== HHH000397: Using ASTQueryTranslatorFactory
+2019-01-30 16:17:12.401 === [http-nio-8081-exec-3] === INFO  === o.a.c.c.C.[Tomcat].[localhost].[/video] ==== Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-30 16:17:12.401 === [http-nio-8081-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-30 16:17:12.421 === [http-nio-8081-exec-3] === INFO  === org.springframework.web.servlet.DispatcherServlet ==== FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-01-30 16:17:12.613 === [http-nio-8081-exec-3] === INFO  === com.pershing.convert.service.WebService ==== Data recieved. CallUuid: rrrrrrrrrr
+2019-01-30 16:17:26.965 === [pool-1-thread-1] === INFO  === c.p.convert.service.impl.ScheduleServiceImpl ==== rrrrrrrrrr: New job submitted.
+2019-01-30 16:17:26.966 === [pool-2-thread-1] === INFO  === c.pershing.convert.service.impl.ConvertServiceImpl ==== rrrrrrrrrr: Convert starting...
+2019-01-30 16:17:26.980 === [pool-2-thread-1] === INFO  === net.bramp.ffmpeg.RunProcessFunction ==== R:\ffmpeg\ffmpeg.exe -version
+2019-01-30 16:17:27.069 === [pool-2-thread-1] === INFO  === net.bramp.ffmpeg.RunProcessFunction ==== R:\ffmpeg\ffmpeg.exe -y -v error -i R:\Psershing_e3sdjfhi32hruifisenlmduodehtrj_3m7n348csudf.webm -f mp4 -vcodec libx264 -s 240x240 -r 24/1 -acodec aac -ac 1 -ar 48000 -b:a 32768 -sn R:\cnvrt\Tmp\rrrrrrrrrr_tmp1.mp4
+2019-01-30 16:17:29.877 === [pool-2-thread-1] === INFO  === net.bramp.ffmpeg.RunProcessFunction ==== R:\ffmpeg\ffmpeg.exe -y -v error -i R:\Psershing_e3sdjfhi32hruifishdfkjhsiuehtrj_34gjfhsudf.webm -f mp4 -vcodec libx264 -s 720x720 -r 24/1 -acodec aac -ac 1 -ar 48000 -b:a 32768 -sn R:\cnvrt\Tmp\rrrrrrrrrr_tmp2.mp4
+2019-01-30 16:17:45.905 === [pool-2-thread-1] === INFO  === net.bramp.ffmpeg.RunProcessFunction ==== R:\ffmpeg\ffmpeg.exe -y -v error -i R:\cnvrt\Tmp\rrrrrrrrrr_tmp1.mp4 -i R:\cnvrt\Tmp\rrrrrrrrrr_tmp2.mp4 -filter_complex [0:a][1:a]amerge=inputs=2[aout],[0:v]scale=240:240[pip],[1:v][pip]overlay='x=main_w-overlay_w-16:y=main_h-overlay_h-40',drawtext=fontfile='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf':r=24:x=w-tw:y=h-th-8:fontcolor=white:fontsize=30:box=1:boxcolor=black@0.3:text='2018-11-10\ ':timecode='10\:10\:10\:10' -f mp4 -vcodec libx264 -r 24/1 -acodec aac -ac 2 -ar 48000 -b:a 32768 -sn -map [aout] R:\cnvrt\Out\Psershing_rrrrrrrrrr.mp4
+2019-01-30 16:18:01.362 === [pool-2-thread-1] === INFO  === com.pershing.convert.service.impl.FTPServiceImpl ==== Sftp server connecting sucess.
+2019-01-30 16:18:01.661 === [pool-2-thread-1] === INFO  === com.pershing.convert.service.impl.FTPServiceImpl ==== Upload sucess.
+2019-01-30 16:18:01.910 === [pool-2-thread-1] === INFO  === com.pershing.convert.service.impl.FTPServiceImpl ==== Upload sucess.
+2019-01-30 16:18:01.989 === [pool-2-thread-1] === INFO  === com.pershing.convert.service.impl.FTPServiceImpl ==== Upload sucess.
+2019-01-30 16:18:01.995 === [pool-2-thread-1] === INFO  === c.pershing.convert.service.impl.ConvertServiceImpl ==== rrrrrrrrrr: Convert finished.
+2019-01-30 16:18:01.996 === [pool-2-thread-1] === INFO  === c.pershing.convert.service.impl.ConvertServiceImpl ==== R:\cnvrt\Tmp\rrrrrrrrrr_tmp1.mp4 deleted.
+2019-01-30 16:18:01.997 === [pool-2-thread-1] === INFO  === c.pershing.convert.service.impl.ConvertServiceImpl ==== R:\cnvrt\Tmp\rrrrrrrrrr_tmp2.mp4 deleted.
+2019-01-30 16:18:01.998 === [pool-2-thread-1] === INFO  === c.pershing.convert.service.impl.ConvertServiceImpl ==== R:\cnvrt\Out\Psershing_rrrrrrrrrr.mp4 deleted.
+2019-01-30 16:21:00.592 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Starting ConvertApp on Wayne-C-T580 with PID 88444 (R:\0130\convert\build\classes\java\main started by Wayne_C in R:\0130\convert)
+2019-01-30 16:21:00.597 === [main] === INFO  === com.pershing.convert.ConvertApp ==== No active profile set, falling back to default profiles: default
+2019-01-30 16:21:00.690 === [main] === INFO  === o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext ==== Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1139b2f3: startup date [Wed Jan 30 16:21:00 CST 2019]; root of context hierarchy
+2019-01-30 16:21:02.333 === [main] === INFO  === o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker ==== Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd1758a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-30 16:21:03.473 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat initialized with port(s): 8081 (http)
+2019-01-30 16:21:03.568 === [main] === INFO  === org.apache.catalina.core.StandardService ==== Starting service [Tomcat]
+2019-01-30 16:21:03.569 === [main] === INFO  === org.apache.catalina.core.StandardEngine ==== Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-30 16:21:03.584 === [localhost-startStop-1] === INFO  === org.apache.catalina.core.AprLifecycleListener ==== The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-1.8.0.191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-1.8.0.191\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\apache-tomcat-8.0.35;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Gradle\gradle-4.10;D:\jar;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Wayne_C\AppData\Local\Microsoft\WindowsApps;C:\Users\Wayne_C\AppData\Roaming\npm;C:\Users\Wayne_C\AppData\Local\Programs\Microsoft VS Code\bin;C:\ffmpeg-4.0.2-win64-static\bin;R:\ffmpeg\bin;C:\apache-tomcat-8.0.35;;.]
+2019-01-30 16:21:03.747 === [localhost-startStop-1] === INFO  === o.a.c.c.C.[Tomcat].[localhost].[/video] ==== Initializing Spring embedded WebApplicationContext
+2019-01-30 16:21:03.748 === [localhost-startStop-1] === INFO  === org.springframework.web.context.ContextLoader ==== Root WebApplicationContext: initialization completed in 3058 ms
+2019-01-30 16:21:03.872 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean ==== Servlet dispatcherServlet mapped to [/]
+2019-01-30 16:21:03.873 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.ServletRegistrationBean ==== Servlet webServlet mapped to [/h2-console/*]
+2019-01-30 16:21:03.877 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-30 16:21:03.877 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-30 16:21:03.877 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-30 16:21:03.878 === [localhost-startStop-1] === INFO  === o.s.boot.web.servlet.FilterRegistrationBean ==== Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-30 16:21:04.083 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Starting...
+2019-01-30 16:21:04.329 === [main] === INFO  === com.zaxxer.hikari.HikariDataSource ==== HikariPool-1 - Start completed.
+2019-01-30 16:21:04.381 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:21:04.409 === [main] === INFO  === org.hibernate.jpa.internal.util.LogHelper ==== HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-30 16:21:04.511 === [main] === INFO  === org.hibernate.Version ==== HHH000412: Hibernate Core {5.2.12.Final}
+2019-01-30 16:21:04.513 === [main] === INFO  === org.hibernate.cfg.Environment ==== HHH000206: hibernate.properties not found
+2019-01-30 16:21:04.561 === [main] === INFO  === org.hibernate.annotations.common.Version ==== HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-30 16:21:04.722 === [main] === INFO  === org.hibernate.dialect.Dialect ==== HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-01-30 16:21:05.435 === [main] === INFO  === o.s.orm.jpa.LocalContainerEntityManagerFactoryBean ==== Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-30 16:21:06.153 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:21:06.505 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerAdapter ==== Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1139b2f3: startup date [Wed Jan 30 16:21:00 CST 2019]; root of context hierarchy
+2019-01-30 16:21:06.566 === [main] === WARN  === o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration ==== spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-30 16:21:06.619 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/Api/InsertQueue],methods=[PUT]}" onto public java.lang.String com.pershing.convert.service.WebService.putConvertQueue(com.pershing.convert.entities.ConvertData) throws java.lang.Exception
+2019-01-30 16:21:06.624 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-30 16:21:06.626 === [main] === INFO  === o.s.w.s.m.m.a.RequestMappingHandlerMapping ==== Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-30 16:21:06.678 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:21:06.678 === [main] === INFO  === o.s.web.servlet.handler.SimpleUrlHandlerMapping ==== Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-30 16:21:06.765 === [main] === WARN  === o.s.b.a.mustache.MustacheAutoConfiguration ==== Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, or set spring.mustache.check-template-location=false)
+2019-01-30 16:21:07.173 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Registering beans for JMX exposure on startup
+2019-01-30 16:21:07.175 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-30 16:21:07.184 === [main] === INFO  === o.s.jmx.export.annotation.AnnotationMBeanExporter ==== Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-30 16:21:07.201 === [main] === INFO  === o.s.s.a.ScheduledAnnotationBeanPostProcessor ==== No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-01-30 16:21:07.257 === [main] === INFO  === o.s.boot.web.embedded.tomcat.TomcatWebServer ==== Tomcat started on port(s): 8081 (http) with context path '/video'
+2019-01-30 16:21:07.261 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Started ConvertApp in 7.072 seconds (JVM running for 7.921)
+2019-01-30 16:21:07.263 === [main] === INFO  === com.pershing.convert.ConvertApp ==== Scheduler start...
+2019-01-30 16:21:07.263 === [main] === INFO  === com.pershing.convert.service.impl.DBServiceImpl ==== Previous Schedules recover...
+2019-01-30 16:21:07.304 === [main] === INFO  === o.h.hql.internal.QueryTranslatorFactoryInitiator ==== HHH000397: Using ASTQueryTranslatorFactory
